@@ -1,2 +1,2 @@
 # apiapi
-An api to search for other api's
+This is the front facing web application for the api for apis
