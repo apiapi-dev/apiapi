@@ -1,0 +1,19 @@
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-bar img {
+  width: 100px;
+}
+.nav-bar a {
+  color: white;
+  text-decoration: none;
+}
+.nav-bar a :visited {
+  color: #0000;
+}
+
+.body {
+  background-color: #697388;
+}

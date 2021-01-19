@@ -1,13 +1,23 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
   mount: {
-    public: {url: '/', static: true},
-    src: {url: '/dist'},
+    public: { url: '/', static: true },
+    src: { url: '/dist' },
   },
   plugins: [
     '@snowpack/plugin-react-refresh',
     '@snowpack/plugin-dotenv',
     '@snowpack/plugin-typescript',
+    [
+      '@snowpack/plugin-sass',
+      {
+        /* see options below */
+      },
+    ],
+    [
+      '@snowpack/plugin-run-script',
+      { cmd: 'sass src:src --no-source-map', watch: '$1 --watch' },
+    ],
   ],
   routes: [
     /* Enable an SPA Fallback in development: */
