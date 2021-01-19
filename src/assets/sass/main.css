@@ -1,19 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&family=Montserrat:wght@700&family=Mukta&display=swap%27");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&family=Montserrat:wght@700&family=Mukta&display=swap%27");
 .nav-bar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+}
+.nav-bar * {
+  padding: 0 8px;
+}
+.nav-bar a:nth-child(1) {
+  margin-right: auto;
 }
 .nav-bar img {
-  width: 100px;
+  max-width: 50px;
 }
 .nav-bar a {
   color: white;
   text-decoration: none;
 }
-.nav-bar a :visited {
-  color: #0000;
+.nav-bar a:hover {
+  color: #000;
+}
+.nav-bar .github-logo {
+  width: 30px;
+}
+.nav-bar .home-btn {
+  display: flex;
+  align-items: center;
+}
+.nav-bar .home-btn:hover {
+  color: white;
 }
 
-.body {
+html {
   background-color: #697388;
+  font-family: "Hind Madurai", "san-serif";
+}
+
+h1, h2 {
+  font-family: "Montserrat", "san-serif";
+}
+
+h3, h4, .nav-bar {
+  font-size: 20px;
+  font-family: "Mukta", "san-serif";
 }

@@ -2,11 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import githubImg from '../assets/images/GitHub.png';
 import logo from '../assets/images/logo1.png';
-import '../assets/sass/components/nav.scss';
+// import '../assets/sass/components/nav.scss';
 export default function NavBar() {
   return (
     <div className="nav-bar">
-      <Link to="/">
+      <Link to="/" className="home-btn">
         <img src={logo} alt="apiapi logo" />
         <h2>The apiapi</h2>
       </Link>
@@ -18,8 +18,7 @@ export default function NavBar() {
       </a>
 
       <a href="https://github.com/apiapi-dev">
-        {' '}
-        <img src={githubImg} alt="github Link" />
+        <img src={githubImg} className="github-logo" alt="github Link" />
       </a>
     </div>
   );

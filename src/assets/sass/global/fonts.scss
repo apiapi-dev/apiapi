@@ -1,20 +1,24 @@
-@font-face {
-  font-family: 'Montserrat-Bold';
-  src: local('Montserrat-Bold'),
-    url('../../fonts/Montserrat-Bold.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'HindMadurai-Light';
-  src: local('HindMadurai-Light'),
-    url('../../fonts/HindMadurai-Light.ttf') format('truetype');
-}
+// @font-face {
+//   font-family: 'Montserrat-Bold';
+//   src: local('Montserrat-Bold'),
+//     url('../../fonts/Montserrat-Bold.ttf') format('truetype');
+// }
+// @font-face {
+//   font-family: 'HindMadurai-Light';
+//   src: local('HindMadurai-Light'),
+//     url('../../fonts/HindMadurai-Light.ttf') format('truetype');
+// }
 
-@font-face {
-  font-family: 'Mukta-Regular';
-  src: local('Mukta-Regular'),
-    url('../../fonts/Mukta-Regular.ttf') format('truetype');
-}
+// @font-face {
+//   font-family: 'Mukta-Regular';
+//   src: local('Mukta-Regular'),
+//     url('../../fonts/Mukta-Regular.ttf') format('truetype');
+// }
 
-$titles: Montserrat-Bold;
-$headers: Mukta-Regular;
-$paragraph: HindMadurai-Light;
+
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&family=Montserrat:wght@700&family=Mukta&display=swap%27');
+
+$titles: 'Montserrat', 'san-serif';
+$headers: 'Mukta', 'san-serif';
+$paragraph: 'Hind Madurai', 'san-serif';
+
