@@ -4,7 +4,9 @@ import NavBar from './components/nav';
 import Home from './components/home';
 import Blog from './components/blog';
 import About from './components/about';
-import './assets/sass/main.scss';
+import Four0Four from './components/four0four';
+
+//import './assets/sass/main.css';
 
 interface AppProps {}
 
@@ -17,7 +19,8 @@ function App({}: AppProps) {
           <Route path="/about" component={About}></Route>
           <Route path="/blog" component={Blog}></Route>
           <Route exact path="/" component={Home}></Route>
-          <Route path='/' component={About}/>
+          <Route path="/" component={About}></Route>
+          <Route component={Four0Four}></Route>
         </Switch>
       </Router>
     </div>

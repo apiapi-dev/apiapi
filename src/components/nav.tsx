@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import githubImg from '../assets/images/GitHub.png';
 import logo from '../assets/images/logo1.png';
-// import '../assets/sass/components/nav.scss';
+
 export default function NavBar() {
   return (
     <div className="nav-bar">
