@@ -1,4 +1,30 @@
+@import '../global/colors.scss';
+@import '../global/fonts.scss';
 .about {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+
+  .creators {
+    display: flex;
+    margin: auto, 25px;
+    flex-direction: row;
+  }
+  .name-card {
+    background-color: $card-color;
+    border: solid black;
+    border-radius: 25px;
+    box-shadow: 5px 10px black;
+
+    max-width: 168px;
+    padding: 15px;
+    margin: auto;
+    align-items: flex-end;
+
+    img {
+      max-width: 40px;
+      margin-right: 20px;
+    }
+  }
 }
