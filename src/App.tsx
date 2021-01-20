@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { HashRouter as Router, Link, Route, Switch } from 'react-router-dom';
 import NavBar from './components/nav';
+import Footer from './components/footer';
 import Home from './components/home';
 import Blog from './components/blog';
 import About from './components/about';
@@ -20,6 +21,7 @@ function App({}: AppProps) {
           <Route exact path="/" component={Home}></Route>
           <Route component={Four0Four}></Route>
         </Switch>
+        <Footer />
       </Router>
     </div>
   );

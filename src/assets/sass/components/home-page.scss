@@ -1,0 +1,50 @@
+@import '../global/colors.scss';
+@import '../global/fonts.scss';
+
+.home-header {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  text-align: center;
+  margin: auto;
+}
+.click2copy {
+  padding: 8px;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.701);
+  margin: 0 auto;
+  position: relative;
+  display: inline;
+  .code-txt {
+    @include code;
+  }
+  .tooltip-txt {
+    visibility: hidden;
+    width: 120px;
+    background-color: $text-color;
+    color: black;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    width: 120px;
+    bottom: 115%;
+    left: 50%;
+    margin-left: -60px;
+
+    &::after {
+      content: ' ';
+      position: absolute;
+      top: 100%; /* At the bottom of the tooltip */
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: $text-color transparent transparent transparent;
+    }
+  }
+}
+.click2copy:hover .tooltip-txt {
+  visibility: visible;
+}

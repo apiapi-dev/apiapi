@@ -17,8 +17,8 @@ export default function NavBar() {
         Docs
       </a>
 
-      <a href="https://github.com/apiapi-dev">
-        <img src={githubImg} className="github-logo" alt="github Link" />
+      <a href="https://github.com/apiapi-dev" className="github-link">
+        <img src={githubImg} alt="github Link" />
       </a>
     </div>
   );

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&family=Montserrat:wght@700&family=Mukta&display=swap%27");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
 .nav-bar {
   display: flex;
   align-items: center;
@@ -13,13 +14,17 @@
   max-width: 50px;
 }
 .nav-bar a {
-  color: white;
+  color: whitesmoke;
   text-decoration: none;
 }
 .nav-bar a:hover {
   color: #000;
 }
-.nav-bar .github-logo {
+.nav-bar .github-link {
+  display: flex;
+  align-items: center;
+}
+.nav-bar .github-link img {
   width: 30px;
 }
 .nav-bar .home-btn {
@@ -27,5 +32,5 @@
   align-items: center;
 }
 .nav-bar .home-btn:hover {
-  color: white;
+  color: whitesmoke;
 }

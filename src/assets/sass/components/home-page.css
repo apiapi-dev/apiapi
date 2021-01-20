@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&family=Montserrat:wght@700&family=Mukta&display=swap%27");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+.home-header {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  text-align: center;
+  margin: auto;
+}
+
+.click2copy {
+  padding: 8px;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.701);
+  margin: 0 auto;
+  position: relative;
+  display: inline;
+}
+.click2copy .code-txt {
+  font-family: "Ubuntu Mono", monospace;
+  letter-spacing: 1.5px;
+}
+.click2copy .tooltip-txt {
+  visibility: hidden;
+  width: 120px;
+  background-color: whitesmoke;
+  color: black;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  width: 120px;
+  bottom: 115%;
+  left: 50%;
+  margin-left: -60px;
+}
+.click2copy .tooltip-txt::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: whitesmoke transparent transparent transparent;
+}
+
+.click2copy:hover .tooltip-txt {
+  visibility: visible;
+}

@@ -1,0 +1,36 @@
+@import '../global/colors.scss';
+@import '../global/fonts.scss';
+
+.footer {
+  font-family: $paragraph;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 2px;
+
+  a {
+    color: $text-color;
+    text-decoration: none;
+    &:hover {
+      color: $nav-color;
+    }
+  }
+  p {
+    margin-right: 10px;
+  }
+  .blink {
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+  }
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+}

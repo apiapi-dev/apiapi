@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&family=Montserrat:wght@700&family=Mukta&display=swap%27");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
 html {
   background-color: #697388;
   font-family: "Hind Madurai", "san-serif";
-  display: flex;
-  align-items: center;
+  color: whitesmoke;
 }
 
 h1,

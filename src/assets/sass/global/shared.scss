@@ -4,9 +4,9 @@
 html {
   background-color: $base-color;
   font-family: $paragraph;
-  display: flex;
-  align-items: center;
+  color: $text-color;
 }
+
 h1,
 h2 {
   font-family: $titles;
