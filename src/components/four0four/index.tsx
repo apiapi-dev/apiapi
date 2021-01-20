@@ -7,9 +7,9 @@ export default function index() {
       <img src={warning} alt="A box with documents with error warnings"></img>
       <div className="message">
         <h1>
-          404 <span className="blink"> |</span>
+          404<span className="blink">|</span>
         </h1>
-        <p>The page you are looking for cannot be found. Sorry! </p>
+        <h3>The page you are looking for cannot be found. Sorry! </h3>
       </div>
     </div>
   );

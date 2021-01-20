@@ -2,7 +2,7 @@
 @import './fonts.scss';
 
 html {
-  background-color: $base-color;
+  background-image: linear-gradient($base-color, $complement-color);
   font-family: $paragraph;
   color: $text-color;
 }

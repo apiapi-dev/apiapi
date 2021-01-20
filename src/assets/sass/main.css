@@ -6,8 +6,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&family=Montserrat:wght@700&family=Mukta&display=swap%27");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&family=Montserrat:wght@700&family=Mukta&display=swap%27");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
 html {
-  background-color: #697388;
+  background-image: linear-gradient(#697388, #b5b0b8);
   font-family: "Hind Madurai", "san-serif";
   color: whitesmoke;
 }
@@ -60,7 +62,6 @@ h4,
 }
 
 .warning {
-  background: rgba(243, 237, 237, 0.25);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -80,6 +81,9 @@ h4,
   align-items: center;
   text-align: center;
 }
+.warning .message h1 {
+  font-family: "Ubuntu Mono", monospace;
+}
 .warning .blink {
   animation: blink-animation 1s steps(5, start) infinite;
   -webkit-animation: blink-animation 1s steps(5, start) infinite;
@@ -96,12 +100,13 @@ h4,
 }
 
 .footer {
-  font-family: "Hind Madurai", "san-serif";
+  font-family: "Ubuntu Mono", monospace;
+  border-top: solid #b5b0b8;
   display: flex;
   flex-direction: row;
   margin: auto;
-  padding-top: 10px;
-  padding-bottom: 2px;
+  margin-top: 35px;
+  padding: 35px, 0px, 2px;
 }
 .footer a {
   color: whitesmoke;

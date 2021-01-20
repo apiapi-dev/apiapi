@@ -2,12 +2,14 @@
 @import '../global/fonts.scss';
 
 .footer {
-  font-family: $paragraph;
+  font-family: $code;
+  border-top: solid $complement-color;
   display: flex;
   flex-direction: row;
   margin: auto;
-  padding-top: 10px;
-  padding-bottom: 2px;
+  margin-top: 35px;
+  padding: 35px, 0px, 2px;
+  //background-color: $contrast-color;
 
   a {
     color: $text-color;

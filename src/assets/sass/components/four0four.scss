@@ -1,5 +1,7 @@
+@import '../global/colors.scss';
+@import '../global/fonts.scss';
+
 .warning {
-  background: $card-color;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,6 +20,9 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    h1 {
+      font-family: $code;
+    }
   }
   .blink {
     animation: blink-animation 1s steps(5, start) infinite;
