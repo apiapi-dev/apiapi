@@ -1,5 +1,5 @@
 import React from 'react';
-import warning from '../images/error-box.svg';
+import warning from '../../assets/images/warning.png';
 
 export default function index() {
   return (
