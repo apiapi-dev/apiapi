@@ -141,6 +141,10 @@ h4,
   justify-content: center;
   margin: auto;
 }
+.about h2 {
+  border-bottom: solid #b5b0b8;
+  max-width: 250px;
+}
 .about .creators {
   display: flex;
   margin: auto, 25px;

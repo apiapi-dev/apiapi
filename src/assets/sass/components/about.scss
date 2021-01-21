@@ -5,7 +5,10 @@
   flex-direction: column;
   justify-content: center;
   margin: auto;
-
+  h2 {
+    border-bottom: solid $complement-color;
+    max-width: 250px;
+  }
   .creators {
     display: flex;
     margin: auto, 25px;
